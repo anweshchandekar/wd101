@@ -114,6 +114,7 @@ function displayTable(){
 form.addEventListener("submit", (e) => {
     let cond_agree= !tc.checked;
     e.preventDefault();
+    console.log('working');
     if (!cond_agree) {
         let obj = makeObject();
         user_entries.push(obj);
@@ -123,4 +124,4 @@ form.addEventListener("submit", (e) => {
 });
 window.onload = (event) => {
     displayTable();
-};
+}
